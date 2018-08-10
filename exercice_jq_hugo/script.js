@@ -1,11 +1,16 @@
 $(function(){
-    $('#valid').click(function(){
-        var nom = $('#nom').text();
-        var prenom = $('#prenom').text();
-        var email = $('#email').text();
-        var telephone = $('#tel').text();
+    var nom = $('#nom');
+    var prenom = $('#prenom');
+    var email = $('#email');
+    var telephone = $('#tel');
+    
 
-        $('table#MesContacts tbody').create('tr')
+
+    $('#valid').click(function(event){
+        var erreur = true;
+        $('#LesContacts').create('tr')        
+
+        
 
 
 
